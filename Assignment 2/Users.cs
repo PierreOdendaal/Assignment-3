@@ -18,6 +18,7 @@ namespace Assignment_2
         {
             this.name = name;
             this.password = password;
+            
         }
 
         public Users()
@@ -26,14 +27,14 @@ namespace Assignment_2
 
         public override string ToString()
         {
-            return string.Format("{0}, {1}", name, password);
+            return string.Format("{0},{1}", name, password);
         }
 
         public List<Users> PopulateUsers()
         {
             List<Users> users = new List<Users>();
             Filehandler fh = new Filehandler();
-            List<string> rawData = fh.ReadData("Users.txt");
+            List<string> rawData = fh.ReadData("Person.txt");
 
             foreach (string item in rawData)
             {

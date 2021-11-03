@@ -43,7 +43,10 @@ namespace Assignment_2
             }
             if (isValid)
             {
-
+                Homefrm home = new Homefrm();
+                home.username ="Sign Out " + Name;
+                this.Hide();
+                home.Show();
             }
             else
             {

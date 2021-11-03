@@ -36,8 +36,8 @@ namespace Assignment_2
 
                 Users NewUser = new Users(name, password);
 
-                //userlist.Add(NewUser);
-                6fh.Writer(userlist);
+                userlist.Add(NewUser);
+                fh.Writer(userlist);
 
                 login.Show();
                 this.Hide();
