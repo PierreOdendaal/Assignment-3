@@ -127,7 +127,40 @@ namespace Assignment_2
             }
 
         }
+        public DataTable SearchStudent(string searchBy, string searchFor)
+        {
+            DataTable data = new DataTable();
 
+            try
+            {
+                SqlDataAdapter com;
+
+                connection.Open();
+                if (searchBy == "Student Number")
+                {
+                    int id = int.Parse(searchFor);
+                    com = new SqlDataAdapter($"Select * from StudentModules where [{searchBy}] = {id} ", connection);
+                }
+                else
+                {
+                   com = new SqlDataAdapter($"Select * from StudentModules where [{searchBy}] = '{searchFor}' ", connection);
+
+                }
+                com.Fill(data);
+
+            }
+            catch (Exception er)
+            {
+                throw er;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return data;
+
+        }
 
     }
 }

@@ -45,7 +45,7 @@ namespace Assignment_2
             }
             else
             {
-                DialogResult dr = MessageBox.Show("Username does not exist");
+                DialogResult dr = MessageBox.Show("Invalid Information");
                 if (dr == DialogResult.Retry)
                 {
                     txtUsernamecheck.Clear();

@@ -166,10 +166,9 @@ namespace Assignment_2
 
         private void SearchNewForm(object sender, EventArgs e)
         {
-            // Pierre, you will connect your search form to this method 
-            // So just call your form and it will automatically hide this form
-
+            frmSearch search = new frmSearch();
             this.Hide();
+            search.Show();
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -177,6 +176,11 @@ namespace Assignment_2
             frmLoginForm login = new frmLoginForm();
             this.Hide();
             login.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
