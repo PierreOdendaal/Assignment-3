@@ -36,6 +36,7 @@ namespace Assignment_2
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblHome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +44,7 @@ namespace Assignment_2
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(51, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(570, 150);
             this.dataGridView1.TabIndex = 0;
@@ -57,7 +58,7 @@ namespace Assignment_2
             "Name",
             "Surname",
             "Module Name"});
-            this.comboBox1.Location = new System.Drawing.Point(282, 211);
+            this.comboBox1.Location = new System.Drawing.Point(156, 202);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -68,7 +69,7 @@ namespace Assignment_2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(191, 214);
+            this.label1.Location = new System.Drawing.Point(65, 205);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 2;
@@ -76,7 +77,7 @@ namespace Assignment_2
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(282, 259);
+            this.textBox1.Location = new System.Drawing.Point(156, 250);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 3;
@@ -86,7 +87,7 @@ namespace Assignment_2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(191, 262);
+            this.label2.Location = new System.Drawing.Point(65, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 4;
@@ -105,11 +106,23 @@ namespace Assignment_2
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnSearch);
-            this.groupBox1.Location = new System.Drawing.Point(446, 214);
+            this.groupBox1.Location = new System.Drawing.Point(320, 205);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(154, 47);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
+            // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.lblHome.BackColor = System.Drawing.Color.White;
+            this.lblHome.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.Location = new System.Drawing.Point(489, 266);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(201, 22);
+            this.lblHome.TabIndex = 7;
+            this.lblHome.Text = "Go Back To Home Page";
+            this.lblHome.Click += new System.EventHandler(this.lblHome_Click);
             // 
             // frmSearch
             // 
@@ -117,6 +130,7 @@ namespace Assignment_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(702, 308);
+            this.Controls.Add(this.lblHome);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -143,5 +157,6 @@ namespace Assignment_2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblHome;
     }
 }

@@ -150,6 +150,8 @@ namespace Assignment_2
         {
             // Crodia, you will connect your update form to this method 
             // So just call your form and it will automatically hide this form
+            Updatefrm updatefrm = new Updatefrm();
+            updatefrm.Show();
 
 
             this.Hide();
@@ -160,6 +162,11 @@ namespace Assignment_2
         {
             // Crodia, you will connect your delete form to this method 
             // So just call your form and it will automatically hide this form
+
+            frmDelete delete = new frmDelete();
+            delete.Show();
+
+            
 
             this.Hide();
         }

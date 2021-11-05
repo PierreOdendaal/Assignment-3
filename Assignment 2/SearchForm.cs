@@ -82,5 +82,12 @@ namespace Assignment_2
         {
 
         }
+
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+            Homefrm homepage = new Homefrm();
+            homepage.Show();
+            this.Hide();
+        }
     }
 }
