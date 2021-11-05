@@ -39,14 +39,14 @@ namespace Assignment_2
             this.Ascending = new System.Windows.Forms.Button();
             this.Descending = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,7 +68,7 @@ namespace Assignment_2
             this.FirstRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.FirstRbtn.Location = new System.Drawing.Point(48, 271);
             this.FirstRbtn.Name = "FirstRbtn";
-            this.FirstRbtn.Size = new System.Drawing.Size(109, 34);
+            this.FirstRbtn.Size = new System.Drawing.Size(130, 34);
             this.FirstRbtn.TabIndex = 2;
             this.FirstRbtn.Text = "First Record";
             this.FirstRbtn.UseVisualStyleBackColor = true;
@@ -77,9 +77,9 @@ namespace Assignment_2
             // NextRbtn
             // 
             this.NextRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.NextRbtn.Location = new System.Drawing.Point(197, 272);
+            this.NextRbtn.Location = new System.Drawing.Point(184, 271);
             this.NextRbtn.Name = "NextRbtn";
-            this.NextRbtn.Size = new System.Drawing.Size(115, 33);
+            this.NextRbtn.Size = new System.Drawing.Size(137, 33);
             this.NextRbtn.TabIndex = 3;
             this.NextRbtn.Text = "Next Record";
             this.NextRbtn.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@ namespace Assignment_2
             // PreviousRbtn
             // 
             this.PreviousRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.PreviousRbtn.Location = new System.Drawing.Point(353, 272);
+            this.PreviousRbtn.Location = new System.Drawing.Point(338, 272);
             this.PreviousRbtn.Name = "PreviousRbtn";
-            this.PreviousRbtn.Size = new System.Drawing.Size(125, 33);
+            this.PreviousRbtn.Size = new System.Drawing.Size(174, 33);
             this.PreviousRbtn.TabIndex = 4;
             this.PreviousRbtn.Text = "Previous Record";
             this.PreviousRbtn.UseVisualStyleBackColor = true;
@@ -147,37 +147,6 @@ namespace Assignment_2
             this.panel1.Size = new System.Drawing.Size(1012, 85);
             this.panel1.TabIndex = 9;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(319, 487);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 31);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Update Details";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label3.Location = new System.Drawing.Point(569, 487);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 31);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Delete Details";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label4.Location = new System.Drawing.Point(830, 487);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(191, 31);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Search Details";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -187,16 +156,6 @@ namespace Assignment_2
             this.panel2.Size = new System.Drawing.Size(222, 72);
             this.panel2.TabIndex = 13;
             this.panel2.Click += new System.EventHandler(this.Insertform);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(95, 487);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 31);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Add Details";
             // 
             // flowLayoutPanel4
             // 
@@ -228,6 +187,51 @@ namespace Assignment_2
             this.flowLayoutPanel2.TabIndex = 11;
             this.flowLayoutPanel2.Click += new System.EventHandler(this.UpdateNewForm);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LightCoral;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label2.Location = new System.Drawing.Point(319, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 31);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Update Details";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LightCoral;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label3.Location = new System.Drawing.Point(569, 487);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(184, 31);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Delete Details";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.LightCoral;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label4.Location = new System.Drawing.Point(830, 487);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(191, 31);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Search Details";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightCoral;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(95, 487);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 31);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Add Details";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -235,7 +239,7 @@ namespace Assignment_2
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(921, 64);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 19);
+            this.label5.Size = new System.Drawing.Size(75, 19);
             this.label5.TabIndex = 10;
             this.label5.Text = "Sort By?";
             // 

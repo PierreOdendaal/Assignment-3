@@ -162,5 +162,46 @@ namespace Assignment_2
 
         }
 
+        public void Update(int id,string name, string surname)
+        {
+            //int StudentId;
+            //string Name;
+            //string Surname;
+
+
+            try
+            {
+                connection.Open();
+
+                SqlCommand com = new SqlCommand($"Update StudentModules  SET Name = '{name}', Surname = '{surname}' where [Student Number] = {id} ",connection);
+
+                com.ExecuteNonQuery();
+            }
+            catch (Exception er)
+            {
+                throw er;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        public void Delete(int id)
+        {
+            try
+            {
+                connection.Open();
+
+                SqlCommand com = new SqlCommand($"DELETE from Student where [Student Number] = {id} ", connection);
+
+                com.ExecuteNonQuery();
+            }
+            catch (Exception er)
+            {
+
+                throw er;
+            }
+        }
+
     }
 }
